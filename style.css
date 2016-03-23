@@ -1,0 +1,34 @@
+.anim{
+	animation: fade 5s;
+	left: 20%;
+	opacity: 1;
+}
+
+@keyframes fade{
+	0%{
+		left: -20%;
+		opacity: 0;
+	}
+	100%{
+		left: 20%;
+		opacity: 1;
+	}
+}
+
+.plays{
+	top: 30%;
+	animation: slidesin 5s;
+}
+
+h1{
+
+}
+
+@keyframes slidesin{
+	0%{
+		top: -10%;
+	}
+	100%{
+		top: 30%;
+	}
+}
