@@ -17,11 +17,18 @@
 
 .plays{
 	top: 30%;
+	right: 10%;
 	animation: slidesin 5s;
 }
 
-h1{
+.plays h1{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 5em;
+}
 
+.plays p{
+	font-size: 2em;
 }
 
 @keyframes slidesin{
@@ -31,4 +38,58 @@ h1{
 	100%{
 		top: 30%;
 	}
+}
+
+.anim img{
+	animation: bgchange 15s infinite;
+}
+
+@keyframes bgchange{
+	0%{
+		content : url("img/screen.png");
+	}
+	33%{
+		content : url("img/screen.png");		
+	}
+	66%{
+		content : url("img/screen1.png");		
+	}
+	99%{
+		content : url("img/screen2.png");				
+	}
+}
+
+@media only screen and (max-width: 720px){
+	body{
+		background: url('img/screen_opa.png');
+		background-opacity: 0.5;
+		color: #fff;
+	}
+
+	.anim{
+		display: none;
+		animation: none;
+		position: relative;
+		opacity: 0.5;
+	}
+
+	.plays{
+		animation: none;
+		position: relative;
+		text-align: center;
+		top: none;
+		bottom: 5%;
+		color: #fff;
+	}
+
+	.plays h1{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 200;
+		font-size: 5em;
+	}
+
+	.plays p{
+		font-size: 2em;
+	}
+
 }
